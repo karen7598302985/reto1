@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class reto4 {
+    public static void main (String[]args){
+        String nombre;
+        int dineroapostar;
+        int eleccion;
+        
+    Scanner leer=new Scanner(System.in);
+    System.out.println("Ingresa tu nombre:");
+    nombre=leer.nextLine();
+    System.out.println("Ingresa la cantidad de dinero que va a apostar:");
+    dineroapostar=leer.nextInt();
+    
+    if (dineroapostar>10000){
+        System.out.println("Ingresa 1. si deseas escoger piedra,  2. si deseas escoger papel y 3. si deseas escoger tijeras");
+    eleccion=leer.nextInt();
+if(eleccion==1){
+    System.out.println("yo elijo papel");
+    System.out.println("tu pierdes");
+}
+else if (eleccion==2){
+        System.out.println("yo elijo tijera");
+        System.out.println("tu pierdes");
+    }
+else if (eleccion==3){
+        System.out.println("yo elijo piedra");
+        System.out.println("tu pierdes");
+    
+    }  
+}
+
+else{
+    System.out.println("debe digitar un valor mayor a 10000");
+}
+      
+
+leer.close();
+
+    }
+}
+
